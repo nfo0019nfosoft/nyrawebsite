@@ -1,125 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
 }
 
 /* NAVBAR */
-.header {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+.header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-.nav-wrapper {
-  max-width: 1300px;
-  margin: auto;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.nav-wrapper{
+  max-width:1300px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative; /* important for mobile menu */
 }
 
-.logo img {
-  height: 82px;
-  margin-left: 40px;
+.logo img{
+  height:82px;
+  margin-left:40px;
 }
 
-.logo span {
-  font-size: 12px;
-  color: #6b7280;
+.nav-menu{
+  display:flex;
+  align-items:center;
+  gap:35px;
 }
 
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 35px;
+.nav-menu a{
+  text-decoration:none;
+  color:#111;
+  font-weight:600;
+  font-size:14px;
+  position:relative;
+  transition:0.3s ease;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 600;
-  font-size: 14px;
-  position: relative;
-}
-
+/* underline + hover color */
 .nav-menu a.active::after,
-.nav-menu a:hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #2662bd;
-  bottom: -6px;
-  left: 0;
+.nav-menu a:hover::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:2px;
+  background:#2662bd;
+  bottom:-6px;
+  left:0;
+}
+
+.nav-menu a:hover{
+  color:#2662bd;
 }
 
 /* HAMBURGER */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+.hamburger{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
 }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #111;
-  margin: 4px 0;
+.hamburger span{
+  width:25px;
+  height:3px;
+  background:#111;
+  margin:4px 0;
 }
 
-#nav-toggle {
-  display: none;
-}
-
-/* HERO IMAGE */
-.hero {
-  width: 100%;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+#nav-toggle{
+  display:none;
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
+@media (max-width:900px){
 
-  .hamburger {
-    display: flex;
+  .hamburger{
+    display:flex;
   }
 
-  .nav-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    width: 100%;
-    flex-direction: column;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.3s ease;
+  .nav-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    height:0;
+    overflow:hidden;
+    transition:0.4s ease;
+    z-index:999;
   }
 
-  .nav-menu a {
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 1px solid #eee;
+  .nav-menu a{
+    padding:15px 0;
+    text-align:center;
+    border-bottom:1px solid #eee;
   }
 
-  #nav-toggle:checked ~ .nav-menu {
-    max-height: 350px;
+  #nav-toggle:checked ~ .nav-menu{
+    height:260px; /* full menu visible */
   }
 }
-
-
-
+.nav-menu a:hover,
+.nav-menu a:focus{
+  color:#2662bd !important;
+}
 
 
 
@@ -552,35 +545,210 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nyra-footer{
-    background:url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/140% no-repeat;
-  color:white;
-  font-family:Arial, sans-serif;
+/* SECTION */
+.testimonials{
+  padding:90px 0 70px;
+  text-align:center;
+  width:100%;
+  overflow:hidden;
 }
 
+.testimonials h2{
+  font-size:42px;
+  color:#2662bd;
+  margin-bottom:70px;
+}
+
+/* WRAPPER */
+.testi-wrapper{
+  position:relative;
+  max-width:1200px;
+  margin:0 auto;
+  padding:100px 70px 40px;
+  overflow:hidden;
+}
+
+/* SLIDER TRACK */
+.testi-track{
+  display:flex;
+  gap:40px;
+  transition:transform 0.6s ease;
+}
+
+/* CARD */
+.testi-card{
+  min-width:320px;
+  background:#f6f6f6;
+  border-radius:22px;
+  padding:60px 30px 40px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+  position:relative;
+  flex-shrink:0;
+}
+
+/* AVATAR */
+.avatar{
+  width:80px;
+  height:80px;
+  background:#5f6dbb;
+  border-radius:50%;
+  position:absolute;
+  top:-40px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  color:white;
+  font-weight:600;
+}
+
+/* GOOGLE ICON */
+.avatar .g{
+  position:absolute;
+  bottom:-4px;
+  right:-4px;
+  background:white;
+  color:#4285F4;
+  font-size:14px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid white;
+}
+
+/* TEXT */
+.testi-card h4{
+  margin-top:35px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.time{
+  font-size:14px;
+  color:#777;
+}
+
+.stars{
+  color:#f4b400;
+  margin:10px 0;
+  font-size:18px;
+}
+
+.verify{
+  color:#1a73e8;
+}
+
+.testi-card p{
+  font-size:16px;
+  line-height:1.7;
+  color:#333;
+}
+
+/* ARROWS */
+.testi-nav{
+  position:absolute;
+  top:55%;
+  transform:translateY(-50%);
+  width:45px;
+  height:45px;
+  background:white;
+  border-radius:50%;
+  border:none;
+  box-shadow:0 0 12px rgba(0,0,0,.15);
+  cursor:pointer;
+  font-size:26px;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.testi-nav.left{ left:10px; }
+.testi-nav.right{ right:10px; }
+
+.testi-nav:hover{
+  background:#2662bd;
+  color:#fff;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+  .testimonials{
+    padding:60px 0;
+  }
+
+  .testimonials h2{
+    font-size:28px;
+    margin-bottom:50px;
+  }
+
+  .testi-wrapper{
+    padding:80px 40px 30px;
+  }
+
+  .testi-track{
+    gap:20px;
+  }
+
+  .testi-card{
+    min-width:260px;
+    padding:55px 20px 30px;
+  }
+
+  .avatar{
+    width:65px;
+    height:65px;
+    font-size:26px;
+    top:-32px;
+  }
+
+  .testi-nav{
+    width:36px;
+    height:36px;
+    font-size:20px;
+  }
+
+  .testi-nav.left{ left:5px; }
+  .testi-nav.right{ right:5px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= FOOTER FULL WIDTH FIX ================= */
+
+.nyra-footer{
+  position: relative;
+  width: 100%;
+  background:
+    linear-gradient(rgba(12,27,47,0.90), rgba(12,27,47,0.90)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* CENTERED CONTENT */
 .nyra-container{
   max-width:1300px;
-  margin:auto;
+  margin: auto;
   padding:60px 30px;
   display:grid;
   grid-template-columns:2fr 1fr 1fr 1.5fr;
   gap:40px;
-  background:rgba(12,27,47,0.90);
 }
 
 /* Logo */
@@ -589,7 +757,7 @@
   margin-bottom:20px;
 }
 
-/* Lines */
+/* Divider lines */
 .nyra-line{
   height:1px;
   background:white;
@@ -603,7 +771,8 @@
   margin-bottom:20px;
 }
 
-.nyra-col a,.nyra-col p{
+.nyra-col a,
+.nyra-col p{
   display:block;
   color:white;
   text-decoration:none;
@@ -611,7 +780,9 @@
   font-size:15px;
 }
 
-.nyra-col i{margin-right:8px}
+.nyra-col i{
+  margin-right:8px;
+}
 
 /* Social */
 .nyra-social p{
@@ -643,14 +814,9 @@
   border-radius:10px;
 }
 
-/* Bottom */
-.nyra-bottom-line{
-  height:1px;
-  background:white;
-  opacity:.3;
-}
-
+/* Bottom Bar */
 .nyra-bottom{
+  width:100%;
   background:black;
   text-align:center;
   padding:20px;
@@ -659,7 +825,8 @@
 }
 
 /* Floating buttons */
-.whatsapp,.call{
+.whatsapp,
+.call{
   position:fixed;
   bottom:20px;
   width:60px;
@@ -673,5 +840,36 @@
   z-index:999;
 }
 
-.whatsapp{left:20px;background:#25d366}
-.call{right:20px;background:#00c853}
+.whatsapp{ left:20px; background:#25d366 }
+.call{ right:20px; background:#00c853 }
+
+/* ================= TABLET ================= */
+@media (max-width:1024px){
+  .nyra-container{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+  .nyra-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:40px 20px;
+  }
+
+  .nyra-logo{ margin:auto; }
+
+  .nyra-social div{ justify-content:center; }
+
+  .map iframe{ height:200px; }
+
+  .whatsapp,.call{
+    width:50px;
+    height:50px;
+    font-size:22px;
+    bottom:15px;
+  }
+  .whatsapp{left:10px}
+  .call{right:10px}
+}

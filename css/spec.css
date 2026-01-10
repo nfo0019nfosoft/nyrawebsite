@@ -779,20 +779,27 @@
 
 
 
+
+/* ================= FOOTER FULL WIDTH FIX ================= */
+
 .nyra-footer{
-    background:url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/140% no-repeat;
-  color:white;
-  font-family:Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  background:
+    linear-gradient(rgba(12,27,47,0.90), rgba(12,27,47,0.90)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
+/* CENTERED CONTENT */
 .nyra-container{
   max-width:1300px;
-  margin:auto;
+  margin: auto;
   padding:60px 30px;
   display:grid;
   grid-template-columns:2fr 1fr 1fr 1.5fr;
   gap:40px;
-  background:rgba(12,27,47,0.90);
 }
 
 /* Logo */
@@ -801,7 +808,7 @@
   margin-bottom:20px;
 }
 
-/* Lines */
+/* Divider lines */
 .nyra-line{
   height:1px;
   background:white;
@@ -815,7 +822,8 @@
   margin-bottom:20px;
 }
 
-.nyra-col a,.nyra-col p{
+.nyra-col a,
+.nyra-col p{
   display:block;
   color:white;
   text-decoration:none;
@@ -823,7 +831,9 @@
   font-size:15px;
 }
 
-.nyra-col i{margin-right:8px}
+.nyra-col i{
+  margin-right:8px;
+}
 
 /* Social */
 .nyra-social p{
@@ -855,14 +865,9 @@
   border-radius:10px;
 }
 
-/* Bottom */
-.nyra-bottom-line{
-  height:1px;
-  background:white;
-  opacity:.3;
-}
-
+/* Bottom Bar */
 .nyra-bottom{
+  width:100%;
   background:black;
   text-align:center;
   padding:20px;
@@ -871,7 +876,8 @@
 }
 
 /* Floating buttons */
-.whatsapp,.call{
+.whatsapp,
+.call{
   position:fixed;
   bottom:20px;
   width:60px;
@@ -885,5 +891,36 @@
   z-index:999;
 }
 
-.whatsapp{left:20px;background:#25d366}
-.call{right:20px;background:#00c853}
+.whatsapp{ left:20px; background:#25d366 }
+.call{ right:20px; background:#00c853 }
+
+/* ================= TABLET ================= */
+@media (max-width:1024px){
+  .nyra-container{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+  .nyra-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:40px 20px;
+  }
+
+  .nyra-logo{ margin:auto; }
+
+  .nyra-social div{ justify-content:center; }
+
+  .map iframe{ height:200px; }
+
+  .whatsapp,.call{
+    width:50px;
+    height:50px;
+    font-size:22px;
+    bottom:15px;
+  }
+  .whatsapp{left:10px}
+  .call{right:10px}
+}
