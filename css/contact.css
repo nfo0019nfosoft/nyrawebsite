@@ -243,13 +243,24 @@
 .contact-left{
   flex:1;
 }
-
 .contact-title{
-  font-size:48px;
-  font-weight:700;
-  color:#1f4db8;
+ font-size: 35px;
+  font-weight:600;
+  color:#2662bd;
   margin-bottom:60px;
+
+  /* start hidden */
+  opacity:0;
+  transform:translateY(60px);
+  transition:0.8s ease;
 }
+
+/* when visible */
+.contact-title.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
 
 /* ================= INFO BLOCK ================= */
 .contact-info{
@@ -268,7 +279,7 @@
   top:0;
   bottom:0;
   width:2px;
-  background:#1f4db8;
+  background:#2662bd;
   opacity:0.3;
 }
 
@@ -284,7 +295,7 @@
   left:-50px;
   top:-6px;
   font-size:48px;
-  color:#1f4db8;
+  color:#2662bd;
   font-weight:700;
 }
 
@@ -292,7 +303,7 @@
 .info-text h4{
   font-size:20px;
   font-weight:700;
-  color:#1f4db8;
+  color:#2662bd;
   margin-bottom:12px;
 }
 
@@ -366,10 +377,83 @@
 
 
 
+.contact-form-section{
+ 
+  padding:80px 20px;
+  text-align:center;
 
+  /* start hidden */
+  opacity:0;
+  transform:translateY(80px);
+  transition:1s ease;
+}
 
+/* When visible */
+.contact-form-section.show{
+  opacity:1;
+  transform:translateY(0);
+}
 
+/* Heading */
+.form-title{
+  font-size:34px;
+  color:#2662bd;
+  margin-bottom:40px;
+}
 
+/* Box */
+.form-box{
+  background:#ede1da;
+  padding:50px 40px;
+  border-radius:12px;
+  max-width:500px;
+  margin:auto;
+  box-shadow:0 15px 40px rgba(0,0,0,0.05);
+}
+
+/* Form */
+form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.two{
+  display:flex;
+  gap:15px;
+}
+
+.two input{flex:1;}
+
+input, select, textarea{
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:15px;
+  width:100%;
+}
+
+textarea{
+  height:130px;
+  resize:none;
+}
+
+button{
+  width:120px;
+  background:#2662bd;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .two{flex-direction:column;}
+  .form-title{font-size:26px;}
+  .form-box{padding:40px 25px;}
+}
 
 
 /* ================= FOOTER FULL WIDTH FIX ================= */

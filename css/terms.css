@@ -306,6 +306,19 @@ html, body {
     font-size: 15px;
   }
 }
+/* ===== TERMS SCROLL ANIMATION ===== */
+.terms-container h2,
+.terms-container p{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.terms-container h2.show,
+.terms-container p.show{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 

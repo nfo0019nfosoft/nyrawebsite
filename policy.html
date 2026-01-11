@@ -165,6 +165,26 @@
 
   </div>
 </section>
+<script>
+const termsElements = document.querySelectorAll(
+  ".terms-container h2, .terms-container p"
+);
+
+function revealTerms(){
+  const trigger = window.innerHeight - 100;
+
+  termsElements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < trigger){
+      el.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealTerms);
+revealTerms(); // run once on page load
+</script>
+
 
 <!-- ================= REFUND POLICY ================= -->
 <section class="policy-section">

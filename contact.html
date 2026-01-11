@@ -120,6 +120,21 @@
 
   </div>
 </section>
+<script>
+const contactTitle = document.querySelector(".contact-title");
+
+function revealContactTitle(){
+  const trigger = window.innerHeight - 100;
+  const top = contactTitle.getBoundingClientRect().top;
+
+  if(top < trigger){
+    contactTitle.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealContactTitle);
+revealContactTitle(); // run on load
+</script>
 
 
 
@@ -127,6 +142,55 @@
 
 
 
+<section class="contact-form-section">
+
+  <!-- Heading OUTSIDE the box -->
+  <h2 class="form-title">Enter Your Details</h2>
+
+  <div class="form-box">
+    <form>
+
+      <div class="two">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+
+      <input type="date" placeholder="DD-MM-YYYY">
+
+      <select>
+        <option value="">Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <input type="tel" placeholder="Mobile Number">
+
+      <input type="text" placeholder="Address">
+
+      <textarea placeholder="Message"></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</section>
+<script>
+const formSection = document.querySelector(".contact-form-section");
+
+function revealForm(){
+  const trigger = window.innerHeight - 100;
+  const top = formSection.getBoundingClientRect().top;
+
+  if(top < trigger){
+    formSection.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealForm);
+revealForm(); // on page load
+</script>
 
 
 
