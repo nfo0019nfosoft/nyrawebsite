@@ -77,6 +77,22 @@
 
   </div>
 </section>
+<script>
+const aboutPara = document.querySelector(".about-content p");
+
+function revealPara(){
+  const pos = aboutPara.getBoundingClientRect().top;
+  const screen = window.innerHeight - 120;
+
+  if(pos < screen){
+    aboutPara.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealPara);
+revealPara();
+</script>
+
 
 
 
@@ -126,6 +142,30 @@
   </div>
 
 </section>
+<script>
+const vmTitles = document.querySelectorAll(".vm-title");
+const vmTexts = document.querySelectorAll(".vm-text p");
+
+function revealVM(){
+  const trigger = window.innerHeight - 120;
+
+  vmTitles.forEach(title=>{
+    if(title.getBoundingClientRect().top < trigger){
+      title.classList.add("show");
+    }
+  });
+
+  vmTexts.forEach(text=>{
+    if(text.getBoundingClientRect().top < trigger){
+      text.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealVM);
+revealVM();
+</script>
+
 
 
 

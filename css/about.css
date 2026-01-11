@@ -254,14 +254,25 @@
   flex: 1;
 }
 
-.about-content p {
-  font-size: 20px;
-  line-height: 1.85;
-  color: #000;
-  margin: 0;
-  text-align: justify;
-  
+.about-content p{
+  font-size:20px;
+  line-height:1.85;
+  color:#000;
+  margin:0;
+  text-align:justify;
+
+  /* animation start */
+  opacity:0;
+  transform:translateY(60px);
+  transition:0.9s ease;
 }
+
+/* when visible */
+.about-content p.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
@@ -382,6 +393,29 @@
   .vm-block {
     margin-bottom: 50px;
   }
+}
+/* VM TITLE ZOOM IN */
+.vm-title{
+  opacity:0;
+  transform:scale(0.6);
+  transition:0.9s ease;
+}
+
+.vm-title.show{
+  opacity:1;
+  transform:scale(1);
+}
+
+/* VM TEXT – DOWN TO UP */
+.vm-text p{
+  opacity:0;
+  transform:translateY(60px);
+  transition:0.9s ease;
+}
+
+.vm-text p.show{
+  opacity:1;
+  transform:translateY(0);
 }
 
 

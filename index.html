@@ -122,11 +122,39 @@
           oculoplastics, cosmetic procedures, corneal transplants, and macular degeneration.
         </p>
 
-        <a href="#" class="about-btn">KNOW MORE</a>
+        <a href="about.html" class="about-btn">KNOW MORE</a>
       </div>
 
     </div>
   </section>
+  <script>
+const aboutImg = document.querySelector(".about-images");
+const aboutText = document.querySelector(".about-content");
+
+function revealAbout(){
+  const trigger = window.innerHeight - 150;
+  const imgTop = aboutImg.getBoundingClientRect().top;
+
+  if(imgTop < trigger){
+    aboutImg.classList.add("show");
+    aboutText.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealAbout);
+revealAbout();
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -748,6 +776,22 @@
 
     </div>
   </section>
+  <script>
+const serviceHeading = document.querySelector(".services h2");
+
+function revealService(){
+  const pos = serviceHeading.getBoundingClientRect().top;
+  const screen = window.innerHeight - 120;
+
+  if(pos < screen){
+    serviceHeading.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealService);
+revealService();
+</script>
+
 
 
 
@@ -792,6 +836,23 @@
     </div>
 
   </section>
+  <script>
+const doctorsTitle = document.querySelector(".doctors-title");
+
+function revealDoctors(){
+  const pos = doctorsTitle.getBoundingClientRect().top;
+  const screen = window.innerHeight - 120;
+
+  if(pos < screen){
+    doctorsTitle.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealDoctors);
+revealDoctors();
+</script>
+
+
 
 
 
@@ -939,6 +1000,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   </div>
 </section>
+<script>
+const videoTitle = document.querySelector(".video-title");
+
+function revealVideo(){
+  const pos = videoTitle.getBoundingClientRect().top;
+  const screen = window.innerHeight - 120;
+
+  if(pos < screen){
+    videoTitle.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealVideo);
+revealVideo();
+</script>
+
 
 
 
@@ -1066,6 +1143,21 @@ window.addEventListener("resize", ()=>{
   page = 0;
   track.style.transform = "translateX(0)";
 });
+</script>
+<script>
+const testiTitle = document.querySelector(".testimonials h2");
+
+function revealTesti(){
+  const pos = testiTitle.getBoundingClientRect().top;
+  const screen = window.innerHeight - 120;
+
+  if(pos < screen){
+    testiTitle.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealTesti);
+revealTesti();
 </script>
 
 
