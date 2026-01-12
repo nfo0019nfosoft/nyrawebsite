@@ -504,15 +504,15 @@
 .eye-section{background:#fff;padding:80px 0}
 .eye-container{max-width:1300px;margin:auto;padding:0 80px}
 .eye-title{display:flex;align-items:center;gap:15px;margin-bottom:50px}
-.eye-bar{width:8px;height:50px;background:#1f5fd2;border-radius:5px}
-.eye-title h2{font-size:42px;color:#1f5fd2;font-weight:500}
+.eye-bar{width:8px;height:50px;background:#2662bd;border-radius:5px}
+.eye-title h2{font-size:42px;color:#2662bd;font-weight:500}
 
 .eye-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:70px}
 
 .eye-card{display:flex;gap:20px}
 .eye-card img{width:130px;height:100px;border-radius:12px;object-fit:cover}
 
-.eye-text h3{color:#1f5fd2;font-size:16px;margin-bottom:10px}
+.eye-text h3{color:#2662bd;font-size:16px;margin-bottom:10px}
 .eye-text p{font-size:15px;line-height:1.7;color:#444}
 
 .eye-text-extra{display:none;margin-top:8px}
@@ -544,7 +544,7 @@
 
 
 .genlap-section{
-  background:#f3e9e2;
+  background:#ede1da;
   padding:90px 0;
 }
 
@@ -661,7 +661,7 @@
 .peds-title{
   text-align:center;
   font-size:42px;
-  color:#1f5bd8;
+  color:#2662bd;
   font-weight:600;
   margin-bottom:60px;
 }
@@ -718,7 +718,7 @@
 /* heading */
 .peds-card h3{
   font-size:18px;
-  color:#1f5bd8;
+  color:#2662bd;
   font-weight:600;
   margin-bottom:15px;
   transition:.3s;
