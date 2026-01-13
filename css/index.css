@@ -420,34 +420,65 @@
 
 /* ===== OUR SERVICES SECTION ===== */
 .services{
+  position:relative;
   padding:80px 0;
-  background:
-    linear-gradient(rgba(255,245,240,0.9), rgba(255,245,240,0.9)),
-    url("https://nyrahospital.in/wp-content/uploads/2024/01/nyra1.jpg") center/cover no-repeat;
   text-align:center;
+  overflow:hidden;
 }
-/* Services Heading */
+
+/* Background image */
+.services-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+
+/* Gradient overlay (same color as before) */
+.services-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(255,245,240,0.9);
+  z-index:1;
+}
+
+/* Keep all content above background */
+.services-content{
+  position:relative;
+  z-index:2;
+}
+
+/* KEEP YOUR ORIGINAL CSS BELOW — NO CHANGES */
+
+/* Heading */
 .services h2{
   font-size:38px;
   margin-bottom:50px;
   font-weight:500;
   color:#000;
-
-  /* animation */
-  opacity:0;
-  transform:scale(0.6);
-  transition:0.9s ease;
+  animation: zoomIn 0.9s ease forwards;
+  transform: scale(0.6);
+  opacity: 0;
 }
 
-/* When visible */
-.services h2.show{
-  opacity:1;
-  transform:scale(1);
+/* Keyframes */
+@keyframes zoomIn {
+  from{
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-
-
-/* Grid Wrapper */
 .services-wrap{
   max-width:1300px;
   margin:auto;
@@ -458,16 +489,14 @@
   gap:30px;
 }
 
-/* Card */
 .service-card{
   background:transparent;
   border-radius:18px;
-  padding-bottom:15px;   /* Space for title */
+  padding-bottom:15px;
   cursor:pointer;
   transition:.4s;
 }
 
-/* Image */
 .service-card img{
   width:100%;
   height:180px;
@@ -479,21 +508,11 @@
   transition:.4s;
 }
 
-/* Title */
-.service-card p{
-  margin-top:26px;       /* Push text down */
-  font-size:16px;
-  font-weight:800;      /* Extra bold */
-  letter-spacing:0.5px;
-  color:#000;
-}
-
-/* Hover effect */
 .service-card:hover img{
   transform:scale(1.05);
 }
 
-/* ===== TABLET ===== */
+/* Tablet */
 @media(max-width:1000px){
   .services-wrap{
     grid-template-columns:repeat(2,1fr);
@@ -501,31 +520,23 @@
   }
 }
 
-/* ===== MOBILE ===== */
+/* Mobile */
 @media(max-width:600px){
   .services{
     padding:60px 0;
   }
-
   .services-wrap{
     grid-template-columns:1fr;
     padding:0 15px;
   }
-
   .services h2{
     font-size:28px;
   }
-
   .service-card img{
     height:220px;
   }
-
-  .service-card p{
-    font-size:15px;
-    margin-top:22px;
-    font-weight:800;
-  }
 }
+
 
 
 
@@ -548,7 +559,7 @@
 .eye-card img{width:130px;height:100px;border-radius:12px;object-fit:cover}
 
 .eye-text h3{color:#2662bd;font-size:16px;margin-bottom:10px}
-.eye-text p{font-size:15px;line-height:1.7;color:black}
+.eye-text p{font-size:14px;line-height:1.7;color:black;}
 
 .eye-text-extra{display:none;margin-top:8px}
 
@@ -561,7 +572,9 @@
   .eye-title h2{font-size:32px}
 }
 
-
+.eye-text-extra{
+  display:none;
+}
 
 
 
@@ -655,6 +668,9 @@
   .genlap-grid{grid-template-columns:1fr}
   .genlap-container{padding:0 20px}
   .genlap-title h2{font-size:32px}
+}
+.genlap-extra{
+  display:none;
 }
 
 
@@ -818,6 +834,9 @@
   .peds-card{
     padding:30px 20px;
   }
+}
+.peds-extra{
+  display:none;
 }
 
 
@@ -1326,19 +1345,44 @@
 
 
 
-/* ================= FOOTER FULL WIDTH FIX ================= */
-
-.nyra-footer{
+/* ================= FOOTER FULL WIDTH FIX ================= */.nyra-footer{
   position: relative;
   width: 100%;
-  background:
-    linear-gradient(rgba(12,27,47,0.90), rgba(12,27,47,0.90)),
-    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover no-repeat;
   color: white;
   font-family: Arial, sans-serif;
+  overflow:hidden;
 }
 
-/* CENTERED CONTENT */
+/* Background image */
+.footer-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+
+/* Gradient overlay (same as before) */
+.footer-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(12,27,47,0.90);
+  z-index:1;
+}
+
+/* Content layer */
+.footer-content{
+  position:relative;
+  z-index:2;
+}
+
+/* KEEP YOUR ORIGINAL CSS BELOW */
+
 .nyra-container{
   max-width:1300px;
   margin: auto;
@@ -1348,13 +1392,11 @@
   gap:40px;
 }
 
-/* Logo */
 .nyra-logo{
   width:260px;
   margin-bottom:20px;
 }
 
-/* Divider lines */
 .nyra-line{
   height:1px;
   background:white;
@@ -1362,7 +1404,6 @@
   margin:12px 0;
 }
 
-/* Text */
 .nyra-col h3{
   font-size:22px;
   margin-bottom:20px;
@@ -1381,7 +1422,6 @@
   margin-right:8px;
 }
 
-/* Social */
 .nyra-social p{
   font-size:16px;
   margin-bottom:10px;
@@ -1403,7 +1443,6 @@
   border-radius:50%;
 }
 
-/* Map */
 .map iframe{
   width:100%;
   height:230px;
@@ -1411,7 +1450,6 @@
   border-radius:10px;
 }
 
-/* Bottom Bar */
 .nyra-bottom{
   width:100%;
   background:black;
@@ -1421,7 +1459,6 @@
   font-weight:600;
 }
 
-/* Floating buttons */
 .whatsapp,
 .call{
   position:fixed;
@@ -1440,14 +1477,12 @@
 .whatsapp{ left:20px; background:#25d366 }
 .call{ right:20px; background:#00c853 }
 
-/* ================= TABLET ================= */
 @media (max-width:1024px){
   .nyra-container{
     grid-template-columns:1fr 1fr;
   }
 }
 
-/* ================= MOBILE ================= */
 @media (max-width:768px){
   .nyra-container{
     grid-template-columns:1fr;

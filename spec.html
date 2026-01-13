@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/spec.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" type="image/png" href="https://nyrahospital.in/wp-content/uploads/2024/01/Nyra-Hospital-Final-Logo_01.png">
+<link rel="icon" type="image/png" href="img/hlogo.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
@@ -19,7 +19,7 @@
 
     <div class="logo">
    <a href="index.html">
-  <img src="https://nyrahospital.in/wp-content/uploads/2024/01/Nyra-Hospital-Final-Logo_01.png" alt="NYRA Hospital">
+  <img src="img/hlogo.png" alt="NYRA Hospital">
 </a>
 
     </div>
@@ -148,47 +148,60 @@ function toggleSpec(card){
 
 
 <section class="services">
-  <h2>Our Services</h2>
 
-  <div class="services-wrap">
+  <!-- Background Image -->
+  <img src="img/vm.png" class="services-bg">
 
-    <div class="service-item">
-      <div class="service-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/01/curious-worried-single-object-element-innovate.jpg">
+  <!-- Gradient Overlay -->
+  <div class="services-overlay"></div>
+
+  <!-- Content -->
+  <div class="services-content">
+
+    <h2>Our Services</h2>
+
+    <div class="services-wrap">
+
+      <div class="service-item">
+        <div class="service-card">
+          <img src="img/os1.png">
+        </div>
+        <p>Cataract Eye Surgery</p>
       </div>
-      <p>Cataract Eye Surgery</p>
-    </div>
 
-    <div class="service-item">
-      <div class="service-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/01/female-ophthalmology-giving-young-girl-eye-exam-office.jpg">
+      <div class="service-item">
+        <div class="service-card">
+          <img src="img/os2.png">
+        </div>
+        <p>Retina & Uvea Services</p>
       </div>
-      <p>Retina & Uvea Services</p>
-    </div>
 
-    <div class="service-item">
-      <div class="service-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/01/doctor-testing-patient-eyesight.jpg">
+      <div class="service-item">
+        <div class="service-card">
+          <img src="img/os3.png">
+        </div>
+        <p>Cornea Services</p>
       </div>
-      <p>Cornea Services</p>
-    </div>
 
-    <div class="service-item">
-      <div class="service-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/01/doctors-pushing-emergency-stretcher-bed-corridor_107420-63721.jpg">
+      <div class="service-item">
+        <div class="service-card">
+          <img src="img/os4.png">
+        </div>
+        <p>Emergency Services</p>
       </div>
-      <p>Emergency Services</p>
-    </div>
 
-    <div class="service-item">
-      <div class="service-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/01/doctor-writes-prescription-pil_93675-128586.jpg">
+      <div class="service-item">
+        <div class="service-card">
+          <img src="img/os5.png">
+        </div>
+        <p>Book an Appointment</p>
       </div>
-      <p>Book an Appointment</p>
+
     </div>
 
   </div>
 </section>
+
 
 
 
@@ -209,14 +222,14 @@ function toggleSpec(card){
 
       <!-- 1 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/ADVANCED-CATARACT-SURGERIES.jpg">
+        <img src="img/e1.png">
         <div class="eye-text">
           <h3>ADVANCED CATARACT SURGERIES</h3>
-          <p class="eye-text-main">
-          Advanced cataract surgery typically refers to techniques and technologies
-          </p>
-          <p class="eye-text-extra">
-             used to improve the safety, precision, and outcomes of cataract removal procedures. Cataract surgery is one of the most commonly performed surgeries globally and involves removing the cloudy lens of the eye and replacing it with an artificial lens implant. Advanced cataract surgery aims to provide patients with improved visual outcomes, faster recovery times, and reduced dependency on glasses or contact lenses, ultimately enhancing their quality of life. However, the suitability of these advanced techniques depends on various factors, including the patient's eye health, lifestyle, and preferences, and should be discussed with our qualified ophthalmologist Dr.Kirtana
+          <p>
+            Advanced cataract surgery typically refers to techniques and technologies
+            <span class="eye-text-extra">
+              used to improve the safety, precision, and outcomes of cataract removal procedures. Cataract surgery is one of the most commonly performed surgeries globally and involves removing the cloudy lens of the eye and replacing it with an artificial lens implant. Advanced cataract surgery aims to provide patients with improved visual outcomes, faster recovery times, and reduced dependency on glasses or contact lenses, ultimately enhancing their quality of life. However, the suitability of these advanced techniques depends on various factors, including the patient's eye health, lifestyle, and preferences, and should be discussed with our qualified ophthalmologist Dr.Kirtana
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -224,14 +237,14 @@ function toggleSpec(card){
 
       <!-- 2 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/CORNEA.jpg">
+        <img src="img/e2.png">
         <div class="eye-text">
           <h3>CORNEA</h3>
-          <p class="eye-text-main">
-          Cornea treatments have evolved significantly, offering hope and improved
-          </p>
-          <p class="eye-text-extra">
-         vision to individuals with corneal diseases or injuries. The cornea, the clear, dome-shaped surface that covers the front of the eye, plays a critical role in focusing your vision. When it's damaged through injury, disease, or infection, it can lead to vision problems or even blindness. Here's an overview of various corneal treatments, from conservative approaches to advanced surgical procedures: Advancements in corneal treatments continue to emerge, including novel drug therapies, gene therapy, and bioengineered corneas. These innovations aim to offer more effective, less invasive options for patients with corneal diseases, potentially improving outcomes and reducing the need for surgery. When dealing with corneal issues, the choice of treatment depends on the specific condition, its severity, and the patient's overall health. Our Qualified Ophthalmologist Dr.Kirtana can provide guidance on the best approach based on individual needs.
+          <p>
+            Cornea treatments have evolved significantly, offering hope and improved
+            <span class="eye-text-extra">
+              vision to individuals with corneal diseases or injuries. The cornea, the clear, dome-shaped surface that covers the front of the eye, plays a critical role in focusing your vision. When it's damaged through injury, disease, or infection, it can lead to vision problems or even blindness. Here's an overview of various corneal treatments, from conservative approaches to advanced surgical procedures: Advancements in corneal treatments continue to emerge, including novel drug therapies, gene therapy, and bioengineered corneas. These innovations aim to offer more effective, less invasive options for patients with corneal diseases, potentially improving outcomes and reducing the need for surgery. When dealing with corneal issues, the choice of treatment depends on the specific condition, its severity, and the patient's overall health. Our Qualified Ophthalmologist Dr.Kirtana can provide guidance on the best approach based on individual needs.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -239,14 +252,14 @@ function toggleSpec(card){
 
       <!-- 3 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/PTERYGIUM.jpg">
+        <img src="img/e3.png">
         <div class="eye-text">
           <h3>PTERYGIUM</h3>
-          <p class="eye-text-main">
-           Pterygium surgery is a procedure performed to remove a pterygium, which is a benign
-          </p>
-          <p class="eye-text-extra">
-           (non-cancerous) growth of the conjunctiva. The conjunctiva is the clear tissue covering the white part of the eye and the inside of the eyelids. Pterygia are often found on the side of the eye closest to the nose and can grow onto the cornea (the clear, front part of the eye). They are believed to be caused primarily by exposure to ultraviolet (UV) light, as well as by dry eye and environmental irritants such as dust and wind.
+          <p>
+            Pterygium surgery is a procedure performed to remove a pterygium, which is a benign
+            <span class="eye-text-extra">
+              (non-cancerous) growth of the conjunctiva. The conjunctiva is the clear tissue covering the white part of the eye and the inside of the eyelids. Pterygia are often found on the side of the eye closest to the nose and can grow onto the cornea (the clear, front part of the eye). They are believed to be caused primarily by exposure to ultraviolet (UV) light, as well as by dry eye and environmental irritants such as dust and wind.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -254,14 +267,12 @@ function toggleSpec(card){
 
       <!-- 4 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/ADVANCED-VISION-TESTS-1.jpg">
+        <img src="img/e4.png">
         <div class="eye-text">
           <h3>ADVANCED VISION TESTS</h3>
-          <p class="eye-text-main">
-        Advanced vision tests are specialized assessments used to evaluate various aspects of visual function and ocular health beyond standard eye exams.
-          </p>
-          <p class="eye-text-extra">
-            
+          <p>
+            Advanced vision tests are specialized assessments used to evaluate various aspects of visual function and ocular health beyond standard eye exams.
+            <span class="eye-text-extra"></span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -269,14 +280,14 @@ function toggleSpec(card){
 
       <!-- 5 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/RETINA-DISORDER.jpg">
+        <img src="img/e5.png">
         <div class="eye-text">
           <h3>RETINAL DISORDERS</h3>
-          <p class="eye-text-main">
-         Treatment for retinal disorders varies depending on the specific condition but may
-          </p>
-          <p class="eye-text-extra">
-            include medications, laser therapy, or surgery. Early detection and treatment are crucial in preventing vision loss associated with many retinal disorders. Regular eye exams are essential for maintaining eye health and detecting any issues early on
+          <p>
+            Treatment for retinal disorders varies depending on the specific condition but may
+            <span class="eye-text-extra">
+              include medications, laser therapy, or surgery. Early detection and treatment are crucial in preventing vision loss associated with many retinal disorders. Regular eye exams are essential for maintaining eye health and detecting any issues early on
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -284,14 +295,14 @@ function toggleSpec(card){
 
       <!-- 6 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/yd-yag.jpg">
+        <img src="img/e6.png">
         <div class="eye-text">
           <h3>ND-YAG LASER</h3>
-          <p class="eye-text-main">
+          <p>
             Nd:YAG laser treatment is a non-invasive laser procedure used in ophthalmology to
-          </p>
-          <p class="eye-text-extra">
-        ddress various eye conditions, particularly posterior capsule opacification (PCO) following cataract surgery, and for the treatment of certain types of glaucoma. Nd:YAG stands for Neodymium-Doped Yttrium Aluminum Garnet, which is a crystal used as a laser medium for solid-state lasers.
+            <span class="eye-text-extra">
+              ddress various eye conditions, particularly posterior capsule opacification (PCO) following cataract surgery, and for the treatment of certain types of glaucoma. Nd:YAG stands for Neodymium-Doped Yttrium Aluminum Garnet, which is a crystal used as a laser medium for solid-state lasers.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -299,14 +310,14 @@ function toggleSpec(card){
 
       <!-- 7 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/GLAUCOMA-TREATMENT.jpg">
+        <img src="img/e7.png">
         <div class="eye-text">
           <h3>GLAUCOMA TREATMENT</h3>
-          <p class="eye-text-main">
+          <p>
             Glaucoma is a group of eye conditions that damage the optic nerve, often due to increased
-          </p>
-          <p class="eye-text-extra">
-          pressure within the eye. Treatment aims to lower intraocular pressure to prevent further damage to the optic nerve and preserve vision.
+            <span class="eye-text-extra">
+              pressure within the eye. Treatment aims to lower intraocular pressure to prevent further damage to the optic nerve and preserve vision.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -314,14 +325,14 @@ function toggleSpec(card){
 
       <!-- 8 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/HUMPHREY-FIELD-ANALYSER.jpg">
+        <img src="img/e8.png">
         <div class="eye-text">
           <h3>HUMPHREY FIELD ANALYSER</h3>
-          <p class="eye-text-main">
-           The Humphrey Field Analyser (HFA) is a device primarily used in the field of ophthalmology
-          </p>
-          <p class="eye-text-extra">
-             and optometry for measuring the human visual field, particularly to diagnose and monitor glaucoma. It is considered a standard tool for this purpose. The device operates by conducting perimetry tests, which evaluate the field of vision of a patient, including peripheral vision, to detect blind spots (scotomas), areas of diminished vision, or other visual field defects.
+          <p>
+            The Humphrey Field Analyser (HFA) is a device primarily used in the field of ophthalmology
+            <span class="eye-text-extra">
+              and optometry for measuring the human visual field, particularly to diagnose and monitor glaucoma. It is considered a standard tool for this purpose. The device operates by conducting perimetry tests, which evaluate the field of vision of a patient, including peripheral vision, to detect blind spots (scotomas), areas of diminished vision, or other visual field defects.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -329,14 +340,14 @@ function toggleSpec(card){
 
       <!-- 9 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/squaed.jpg">
+        <img src="img/e9.png">
         <div class="eye-text">
           <h3>SQUINT SURGERY</h3>
-          <p class="eye-text-main">
+          <p>
             Squint, also known as strabismus, is a condition where the eyes do not align properly
-          </p>
-          <p class="eye-text-extra">
-           Surgery for squint is typically performed by an ophthalmologist who specializes in this area. The surgery aims to correct the alignment of the eyes by adjusting the muscles responsible for controlling their movement.
+            <span class="eye-text-extra">
+              Surgery for squint is typically performed by an ophthalmologist who specializes in this area. The surgery aims to correct the alignment of the eyes by adjusting the muscles responsible for controlling their movement.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -344,14 +355,14 @@ function toggleSpec(card){
 
       <!-- 10 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/OCULOPLASTY.jpg">
+        <img src="img/e10.png">
         <div class="eye-text">
           <h3>OCULOPLASTY</h3>
-          <p class="eye-text-main">
-         culoplasty surgery, also known as oculoplastic surgery, refers to a range of
-          </p>
-          <p class="eye-text-extra">
-           procedures that involve the orbit (eye socket), eyelids, tear ducts, and the face surrounding the eyes. These surgeries can be cosmetic, reconstructive, or both and are performed by oculoplastic surgeons, who are ophthalmologists with additional specialized training in plastic and reconstructive surgery of the periorbital and facial tissues.
+          <p>
+            culoplasty surgery, also known as oculoplastic surgery, refers to a range of
+            <span class="eye-text-extra">
+              procedures that involve the orbit (eye socket), eyelids, tear ducts, and the face surrounding the eyes. These surgeries can be cosmetic, reconstructive, or both and are performed by oculoplastic surgeons, who are ophthalmologists with additional specialized training in plastic and reconstructive surgery of the periorbital and facial tissues.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -359,14 +370,14 @@ function toggleSpec(card){
 
       <!-- 11 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/COMPUTERISED-EYE-TESTING.jpg">
+        <img src="img/e11.png">
         <div class="eye-text">
           <h3>COMPUTERISED EYE TESTING</h3>
-          <p class="eye-text-main">
-          Computerized eye testing is a modern method of assessing vision and eye health 
-          </p>
-          <p class="eye-text-extra">
-             using advanced technology. These tests can be more precise and quicker than traditional eye exams, providing detailed insights into your eye health and vision needs.
+          <p>
+            Computerized eye testing is a modern method of assessing vision and eye health
+            <span class="eye-text-extra">
+              using advanced technology. These tests can be more precise and quicker than traditional eye exams, providing detailed insights into your eye health and vision needs.
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -374,14 +385,14 @@ function toggleSpec(card){
 
       <!-- 12 -->
       <div class="eye-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/CONTACT-LENS-CENTER.jpg">
+        <img src="img/e12.png">
         <div class="eye-text">
           <h3>CONTACT LENS CENTER</h3>
-          <p class="eye-text-main">
-           Contact lens center is a specialized facility or department within an eye care practice 
-          </p>
-          <p class="eye-text-extra">
-           or clinic that focuses on fitting, prescribing, and providing 
+          <p>
+            Contact lens center is a specialized facility or department within an eye care practice
+            <span class="eye-text-extra">
+              or clinic that focuses on fitting, prescribing, and providing
+            </span>
           </p>
           <button class="eye-btn">Read more</button>
         </div>
@@ -390,22 +401,25 @@ function toggleSpec(card){
     </div>
   </div>
 </section>
+
 <script>
 document.querySelectorAll(".eye-btn").forEach(btn=>{
   btn.addEventListener("click",()=>{
     const box = btn.parentElement;
     const extra = box.querySelector(".eye-text-extra");
 
-    if(extra.style.display==="block"){
+    if(extra.style.display==="inline"){
       extra.style.display="none";
       btn.innerText="Read more";
     }else{
-      extra.style.display="block";
+      extra.style.display="inline";
       btn.innerText="Read less";
     }
   });
 });
 </script>
+
+
 
 
 
@@ -430,14 +444,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 1 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/PEDIATRICS-SURGERY.jpg">
+        <img src="img/g1.png">
         <div class="genlap-text">
           <h3>HEMORRHOIDS</h3>
-          <p class="genlap-main">
-          It seems like you may have meant "hemorrhoids". Hemorrhoids are swollen veins in the lower rectum or anus.
-          </p>
-          <p class="genlap-extra">
-           They can be internal, inside the rectum, or external, under the skin around the anus. Hemorrhoids can be caused by various factors such as straining during bowel movements, sitting for long periods, obesity, and pregnancy.
+          <p>
+            It seems like you may have meant "hemorrhoids". Hemorrhoids are swollen veins in the lower rectum or anus.
+            <span class="genlap-extra">
+              They can be internal, inside the rectum, or external, under the skin around the anus. Hemorrhoids can be caused by various factors such as straining during bowel movements, sitting for long periods, obesity, and pregnancy.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -445,13 +459,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 2 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/PILES-SLAPPLER-LASER.jpg">
+        <img src="img/g2.png">
         <div class="genlap-text">
           <h3>FISSURES</h3>
-          <p class="genlap-main">
-          Anal fissures are small tears in the lining of the anus, often caused by passing large or hard stools during bowel movements
-          <p class="genlap-extra">
-           They can also result from other conditions that affect the anal area, such as inflammatory bowel disease (IBD), infections, or childbirth. Fissures can be quite painful, especially during and immediately following bowel movements, and can lead to bleeding or the presence of blood on toilet paper.
+          <p>
+            Anal fissures are small tears in the lining of the anus, often caused by passing large or hard stools during bowel movements
+            <span class="genlap-extra">
+              They can also result from other conditions that affect the anal area, such as inflammatory bowel disease (IBD), infections, or childbirth. Fissures can be quite painful, especially during and immediately following bowel movements, and can lead to bleeding or the presence of blood on toilet paper.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -459,14 +474,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 3 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/FISSURES-AND-FISTULA-1.jpg">
+        <img src="img/g3.png">
         <div class="genlap-text">
           <h3>FISTULA IN ANO</h3>
-          <p class="genlap-main">
-           An "anal fistula," which is an abnormal connection between the epithelialized surface of the anal canal and the perianal skin.
-          </p>
-          <p class="genlap-extra">
-           Anal fistulas are often the result of an infection near the anus leading to an abscess, which then drains either internally or externally. They can be quite painful and may cause discomfort during activities such as sitting, walking, or having a bowel movement.
+          <p>
+            An "anal fistula," which is an abnormal connection between the epithelialized surface of the anal canal and the perianal skin.
+            <span class="genlap-extra">
+              Anal fistulas are often the result of an infection near the anus leading to an abscess, which then drains either internally or externally. They can be quite painful and may cause discomfort during activities such as sitting, walking, or having a bowel movement.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -474,14 +489,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 4 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/HYDROCELE.jpg">
+        <img src="img/g4.png">
         <div class="genlap-text">
           <h3>HERNIA</h3>
-          <p class="genlap-main">
-          A hernia occurs when an organ or fatty tissue squeezes through a weak spot in the surrounding muscle or connective tissue
-          </p>
-          <p class="genlap-extra">
-         creating a bulge or lump. Hernias can develop in various parts of the body, but they commonly occur in the abdomen or groin area.
+          <p>
+            A hernia occurs when an organ or fatty tissue squeezes through a weak spot in the surrounding muscle or connective tissue
+            <span class="genlap-extra">
+              creating a bulge or lump. Hernias can develop in various parts of the body, but they commonly occur in the abdomen or groin area.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -489,14 +504,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 5 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/CIRCUMCISION.jpg">
+        <img src="img/g5.png">
         <div class="genlap-text">
           <h3>HYDROCELE</h3>
-          <p class="genlap-main">
-        A hydrocele is a fluid-filled sac surrounding a testicle that results in swelling of the scrotum, the pouch of skin holding the testicles.
-          </p>
-          <p class="genlap-extra">
-            Hydroceles are common in newborns, especially in premature babies, but they can also develop in adult men due to inflammation or injury within the scrotum..
+          <p>
+            A hydrocele is a fluid-filled sac surrounding a testicle that results in swelling of the scrotum, the pouch of skin holding the testicles.
+            <span class="genlap-extra">
+              Hydroceles are common in newborns, especially in premature babies, but they can also develop in adult men due to inflammation or injury within the scrotum..
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -504,14 +519,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 6 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/HERNIA-OR-APPENDIX.jpg">
+        <img src="img/g6.png">
         <div class="genlap-text">
           <h3>APPENDIX</h3>
-          <p class="genlap-main">
-           Appendicitis is a common health problem associated with the appendix. The appendix is a small, tube-like structure
-          </p>
-          <p class="genlap-extra">
-          attached to the large intestine in the lower right side of the abdomen. Appendicitis occurs when the appendix becomes inflamed and filled with pus, usually due to a blockage caused by feces, a foreign body, or, in some cases, a tumor.
+          <p>
+            Appendicitis is a common health problem associated with the appendix. The appendix is a small, tube-like structure
+            <span class="genlap-extra">
+              attached to the large intestine in the lower right side of the abdomen. Appendicitis occurs when the appendix becomes inflamed and filled with pus, usually due to a blockage caused by feces, a foreign body, or, in some cases, a tumor.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -519,14 +534,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 7 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/gs.jpg">
+        <img src="img/g7.png">
         <div class="genlap-text">
           <h3>GALLSTONES</h3>
-          <p class="genlap-main">
-        Gallstones are hard particles that form in the gallbladder, a small organ located under the liver. The
-          </p>
-          <p class="genlap-extra">
-            gallbladder stores bile, a digestive fluid produced by the liver that helps break down fats. Gallstones can range in size from as small as a grain of sand to as large as a golf ball.
+          <p>
+            Gallstones are hard particles that form in the gallbladder, a small organ located under the liver. The
+            <span class="genlap-extra">
+              gallbladder stores bile, a digestive fluid produced by the liver that helps break down fats. Gallstones can range in size from as small as a grain of sand to as large as a golf ball.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -534,14 +549,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 8 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/VARICOSE-VEINS.jpg">
+        <img src="img/g8.png">
         <div class="genlap-text">
           <h3>VARICOSE VEINS</h3>
-          <p class="genlap-main">
-           Varicose veins are enlarged, swollen, and twisted veins, often appearing blue or dark purple in color. They usually
-          </p>
-          <p class="genlap-extra">
-           occur in the legs and can cause discomfort, pain, or aching sensation. Varicose veins happen when the valves inside the veins weaken or fail to work properly, causing blood to pool or flow backward instead of moving toward the heart. Risk factors for varicose veins include genetics, age, gender (women are more prone), obesity, pregnancy, prolonged standing or sitting, and a history of blood clots.
+          <p>
+            Varicose veins are enlarged, swollen, and twisted veins, often appearing blue or dark purple in color. They usually
+            <span class="genlap-extra">
+              occur in the legs and can cause discomfort, pain, or aching sensation. Varicose veins happen when the valves inside the veins weaken or fail to work properly, causing blood to pool or flow backward instead of moving toward the heart. Risk factors for varicose veins include genetics, age, gender (women are more prone), obesity, pregnancy, prolonged standing or sitting, and a history of blood clots.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -549,14 +564,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 9 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/young-woman-scrubbing-her-foot-by-pumice-beauty-salon_186202-749.jpg">
+        <img src="img/g9.png">
         <div class="genlap-text">
           <h3>CIRCUMCISION</h3>
-          <p class="genlap-main">
+          <p>
             Circumcision is a surgical procedure that involves the removal of the foreskin from the human penis.
-           </p>
-          <p class="genlap-extra">
-           The foreskin is the fold of skin that covers the head (glans) of the penis. Circumcision can be performed for religious, cultural, medical, or cosmetic reasons, and it is one of the oldest and most common surgical procedures worldwide.
+            <span class="genlap-extra">
+              The foreskin is the fold of skin that covers the head (glans) of the penis. Circumcision can be performed for religious, cultural, medical, or cosmetic reasons, and it is one of the oldest and most common surgical procedures worldwide.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -564,15 +579,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 10 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/HYSTERECTOMY.jpg">
+        <img src="img/g10.png">
         <div class="genlap-text">
           <h3>HYSTERECTOMY</h3>
-          <p class="genlap-main">
-         A hysterectomy is a surgical procedure to remove the uterus. There are several reasons why someone might undergo a hysterectomy, like given below
-          </p>
-          <p class="genlap-extra">
-           
-            Uterine fibroids: These are noncancerous growths in the uterus that can cause pain, heavy bleeding, and other symptoms. Endometriosis: This is a condition where the tissue that lines the inside of the uterus grows outside of it, leading to pain and other complications. Uterine prolapse: This occurs when the uterus slips from its normal position into the vaginal canal. Gynecologic cancer: In cases of uterine, ovarian, or cervical cancer, a hysterectomy may be recommended as part of treatment.
+          <p>
+            A hysterectomy is a surgical procedure to remove the uterus. There are several reasons why someone might undergo a hysterectomy, like given below
+            <span class="genlap-extra">
+              Uterine fibroids: These are noncancerous growths in the uterus that can cause pain, heavy bleeding, and other symptoms. Endometriosis: This is a condition where the tissue that lines the inside of the uterus grows outside of it, leading to pain and other complications. Uterine prolapse: This occurs when the uterus slips from its normal position into the vaginal canal. Gynecologic cancer: In cases of uterine, ovarian, or cervical cancer, a hysterectomy may be recommended as part of treatment.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -580,14 +594,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 11 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/AMPUTATION.jpg">
+        <img src="img/g11.png">
         <div class="genlap-text">
           <h3>TUBECTOMY</h3>
-          <p class="genlap-main">
-       A tubectomy, also known as tubal ligation or female sterilization, is a surgical procedure designed to permanently prevent pregnancy
-          </p>
-          <p class="genlap-extra">
-           It involves blocking, tying, or cutting the fallopian tubes, which are the pathways through which an egg travels from the ovaries to the uterus. By doing so, this procedure prevents sperm from reaching and fertilizing an egg.
+          <p>
+            A tubectomy, also known as tubal ligation or female sterilization, is a surgical procedure designed to permanently prevent pregnancy
+            <span class="genlap-extra">
+              It involves blocking, tying, or cutting the fallopian tubes, which are the pathways through which an egg travels from the ovaries to the uterus. By doing so, this procedure prevents sperm from reaching and fertilizing an egg.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -595,14 +609,14 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
 
       <!-- 12 -->
       <div class="genlap-card">
-        <img src="https://nyrahospital.in/wp-content/uploads/2024/02/PLASTIC-SURGERY.jpg">
+        <img src="img/g12.png">
         <div class="genlap-text">
           <h3>THYROIDECTOMY</h3>
-          <p class="genlap-main">
+          <p>
             A thyroidectomy is a surgical procedure that involves the removal of all or part of the thyroid gland.
-           </p>
-          <p class="genlap-extra">
-         The thyroid is a butterfly-shaped gland located in the neck, just below the Adam's apple. It produces hormones that regulate the body's metabolism, energy generation, and the functioning of various systems.
+            <span class="genlap-extra">
+              The thyroid is a butterfly-shaped gland located in the neck, just below the Adam's apple. It produces hormones that regulate the body's metabolism, energy generation, and the functioning of various systems.
+            </span>
           </p>
           <button class="genlap-btn">Read more</button>
         </div>
@@ -611,24 +625,22 @@ document.querySelectorAll(".eye-btn").forEach(btn=>{
     </div>
   </div>
 </section>
-
 <script>
-document.querySelectorAll(".genlap-btn").forEach(btn=>{
-  btn.onclick=()=>{
-    const box=btn.parentElement;
-    const extra=box.querySelector(".genlap-extra");
+  document.querySelectorAll(".genlap-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const extra = btn.parentElement.querySelector(".genlap-extra");
 
-    if(extra.style.display==="block"){
+    if(extra.style.display==="inline"){
       extra.style.display="none";
       btn.innerText="Read more";
     }else{
-      extra.style.display="block";
+      extra.style.display="inline";
       btn.innerText="Read less";
     }
-  }
+  });
 });
-</script>
 
+</script>
 
 
 
@@ -642,78 +654,78 @@ document.querySelectorAll(".genlap-btn").forEach(btn=>{
 
     <!-- 1 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/antenatal.png">
+      <img src="img/p1.png">
       <h3>ANTENATAL</h3>
-      <p class="peds-main">
+      <p>
         Ultrasound scans can detect some birth defects before the baby is born. Some of these defects are non compatible with life.
-      </p>
-      <p class="peds-extra">
-       There are many birth defects that can be treated after birth. Some defects can be treated before birth. Birth defects such as swelling of the kidneys, bowel dilatation, bowel in the chest can be treated. Parents are counselled and given treatment options regarding the birth defect
+        <span class="peds-extra">
+          There are many birth defects that can be treated after birth. Some defects can be treated before birth. Birth defects such as swelling of the kidneys, bowel dilatation, bowel in the chest can be treated. Parents are counselled and given treatment options regarding the birth defect
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
 
     <!-- 2 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/minimal-invasiv.png">
+      <img src="img/p2.png">
       <h3>MINIMAL INVASIVE</h3>
-      <p class="peds-main">
-       This is also known as “Key Hole Surgery”. This is another approach in doing surgery where access to the area of interest
-      </p>
-      <p class="peds-extra">
-       in through small ports which minimize scarring and post operative pain. This is done with the use of fibro optic light systems and cameras. This allows access to difficult to reach areas with magnification. This approach allows complex surgeries to be done with minimal external scars.
+      <p>
+        This is also known as “Key Hole Surgery”. This is another approach in doing surgery where access to the area of interest
+        <span class="peds-extra">
+          in through small ports which minimize scarring and post operative pain. This is done with the use of fibro optic light systems and cameras. This allows access to difficult to reach areas with magnification. This approach allows complex surgeries to be done with minimal external scars.
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
 
     <!-- 3 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/neonatal-surgery.png">
+      <img src="img/p3.png">
       <h3>NEONATAL SURGERY</h3>
-      <p class="peds-main">
-       This surgery done in a child, who is less than one month old. They usually undergo emergency procedures
-      </p>
-      <p class="peds-extra">
-       and occasionally some elective surgeries. Some of the emergency surgeries done are for absent anus ( Anorectal malformation), disconnected food pipe ( trachea esophageal fistula with esophageal atresia), bowel in the chest due a gap in the muscle between the chest and abdomen (Congenital Diaphragmatic Hernia), blocked small bowel causing abdominal distention, yellow vomiting, a child who is unable to pass urine properly. Elective surgeries are planned surgeries done in a new born child. Inguinal hernia is swelling seen in the groin of the child especially when the child cries or strains. It reduces when the child is sleeping. Surgery is required in the newborn period because there is a higher risk of complications in them such as obstruction of the small intestine requiring emergency surgery.
+      <p>
+        This surgery done in a child, who is less than one month old. They usually undergo emergency procedures
+        <span class="peds-extra">
+          and occasionally some elective surgeries. Some of the emergency surgeries done are for absent anus ( Anorectal malformation), disconnected food pipe ( trachea esophageal fistula with esophageal atresia), bowel in the chest due a gap in the muscle between the chest and abdomen (Congenital Diaphragmatic Hernia), blocked small bowel causing abdominal distention, yellow vomiting, a child who is unable to pass urine properly. Elective surgeries are planned surgeries done in a new born child. Inguinal hernia is swelling seen in the groin of the child especially when the child cries or strains. It reduces when the child is sleeping. Surgery is required in the newborn period because there is a higher risk of complications in them such as obstruction of the small intestine requiring emergency surgery.
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
 
     <!-- 4 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/pediatric_continence.png">
+      <img src="img/p4.png">
       <h3>PEDIATRIC CONTINENCE</h3>
-      <p class="peds-main">
+      <p>
         Continence is the control of bowel and bladder movements. A patient of toilet training age should be able
-      </p>
-      <p class="peds-extra">
-        hold their urine or bowel movement until they are able to empty their bowel or bladder in a bathroom. Some children do not get toilet trained. They continue to soil their undergarments. They may continue to bed wet well into their preteens and occasionally their teens. Children with abnormalities of the bowel or bladder at birth may not be able attain toilet training and they may need help in doing so. As pediatric surgeons and urologists we evaluate children for underlying problems and offer solutions to achieve dryness through either behavior therapy, medical or surgical treatment
+        <span class="peds-extra">
+          hold their urine or bowel movement until they are able to empty their bowel or bladder in a bathroom. Some children do not get toilet trained. They continue to soil their undergarments. They may continue to bed wet well into their preteens and occasionally their teens. Children with abnormalities of the bowel or bladder at birth may not be able attain toilet training and they may need help in doing so. As pediatric surgeons and urologists we evaluate children for underlying problems and offer solutions to achieve dryness through either behavior therapy, medical or surgical treatment
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
 
     <!-- 5 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/thoratic-surgery.png">
+      <img src="img/p5.png">
       <h3>THORACIC SURGERY</h3>
-      <p class="peds-main">
+      <p>
         This is surgery of the chest, for the lungs and esophagus. Some children with lung infection may develop fluid
-      </p>
-      <p class="peds-extra">
-       in the space between with lung and chest causing breathing difficulty. It is usually drained with a tube in the chest. Occasionally the lung is unable to expand because it is trapped by the infection, then the child may need surgery (Thoracoscopic or open) the free the lung. In some children there may be bowel in the chest due to the absence of the muscle separating the chest and abdomen. Others may have abnormal swellings in the lung causing recurrent infections or difficulty in breathing
+        <span class="peds-extra">
+          in the space between with lung and chest causing breathing difficulty. It is usually drained with a tube in the chest. Occasionally the lung is unable to expand because it is trapped by the infection, then the child may need surgery (Thoracoscopic or open) the free the lung. In some children there may be bowel in the chest due to the absence of the muscle separating the chest and abdomen. Others may have abnormal swellings in the lung causing recurrent infections or difficulty in breathing
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
 
     <!-- 6 -->
     <div class="peds-card">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/02/urology.png">
+      <img src="img/p6.png">
       <h3>UROLOGY</h3>
-      <p class="peds-main">
-       Some children have some difficulty in passing at occasionally. The most common cause is urine infection
-      </p>
-      <p class="peds-extra">
-        where the child has pain in passing urine along with fever. It is usually because of a tight foreskin in boys or poor toilet habit in girls. But some children have to be investigated because they may problems of the kidney, ureters or bladder, which if ignored can cause life threatening illness. Some children have swelling of one kidney usually detected before birth. These children need to be investigated to check if the kidney is blocking the flow of urine. Some children may pass urine with great difficulty. This may be because of there is a problem with urethra (urine passage from the bladder). If it is not treated promptly some children may develop long term kidney problem
+      <p>
+        Some children have some difficulty in passing at occasionally. The most common cause is urine infection
+        <span class="peds-extra">
+          where the child has pain in passing urine along with fever. It is usually because of a tight foreskin in boys or poor toilet habit in girls. But some children have to be investigated because they may problems of the kidney, ureters or bladder, which if ignored can cause life threatening illness. Some children have swelling of one kidney usually detected before birth. These children need to be investigated to check if the kidney is blocking the flow of urine. Some children may pass urine with great difficulty. This may be because of there is a problem with urethra (urine passage from the bladder). If it is not treated promptly some children may develop long term kidney problem
+        </span>
       </p>
       <button class="peds-btn">Read more</button>
     </div>
@@ -721,87 +733,99 @@ document.querySelectorAll(".genlap-btn").forEach(btn=>{
   </div>
 </section>
 <script>
-document.querySelectorAll(".peds-btn").forEach(btn=>{
-  btn.onclick=()=>{
-    const box=btn.parentElement;
-    const extra=box.querySelector(".peds-extra");
+  document.querySelectorAll(".peds-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const extra = btn.parentElement.querySelector(".peds-extra");
 
-    if(extra.style.display==="block"){
+    if(extra.style.display==="inline"){
       extra.style.display="none";
       btn.innerText="Read more";
     }else{
-      extra.style.display="block";
+      extra.style.display="inline";
       btn.innerText="Read less";
     }
-  }
+  });
 });
+
 </script>
+
+
+
+
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <footer class="nyra-footer">
 
-  <div class="nyra-container">
+  <!-- Background image -->
+  <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" class="footer-bg">
 
-    <!-- LEFT -->
-    <div class="nyra-col">
-      <img src="https://nyrahospital.in/wp-content/uploads/2024/01/Nyra-Hospital-Final-Logo_02.png" class="nyra-logo">
+  <!-- Overlay -->
+  <div class="footer-overlay"></div>
 
-      <div class="nyra-line"></div>
-      <p><i class="fa fa-location-dot"></i> 2-27/4, Mallikarjuna Nagar, Peerzadiguda, Boduppal, Hyderabad, Telangana 500092</p>
+  <!-- Footer content -->
+  <div class="footer-content">
 
-      <div class="nyra-line"></div>
-      <p><i class="fa fa-phone"></i> +91 88777 55530</p>
+    <div class="nyra-container">
 
-      <div class="nyra-line"></div>
-      <p><i class="fa fa-envelope"></i> nyrahospital@gmail.com</p>
+      <!-- LEFT -->
+      <div class="nyra-col">
+        <img src="img/flogo.png" class="nyra-logo">
 
-      <div class="nyra-line"></div>
+        <div class="nyra-line"></div>
+        <p><i class="fa fa-location-dot"></i> 2-27/4, Mallikarjuna Nagar, Peerzadiguda, Boduppal, Hyderabad, Telangana 500092</p>
 
-      <div class="nyra-social">
-        <p>Follow Us</p>
-        <div>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
+        <div class="nyra-line"></div>
+        <p><i class="fa fa-phone"></i> +91 88777 55530</p>
+
+        <div class="nyra-line"></div>
+        <p><i class="fa fa-envelope"></i> nyrahospital@gmail.com</p>
+
+        <div class="nyra-line"></div>
+
+        <div class="nyra-social">
+          <p>Follow Us</p>
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
         </div>
       </div>
+
+      <!-- QUICK LINKS -->
+      <div class="nyra-col">
+        <h3>QUICK LINKS</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="spec.html">Specializations</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="policy.html">Privacy Policy</a>
+      </div>
+
+      <!-- SPECIALIZATION -->
+      <div class="nyra-col">
+        <h3>OUR SPECIALIZATIONS</h3>
+        <a href="spec.html">Eye</a>
+        <a href="spec.html">Laparoscopy</a>
+        <a href="spec.html">General Surgery</a>
+      </div>
+
+      <!-- MAP -->
+      <div class="nyra-col map">
+        <h3>LOCATION MAP</h3>
+        <iframe src="https://www.google.com/maps?q=Nyra%20Hospital%20Hyderabad&output=embed"></iframe>
+      </div>
+
     </div>
 
-    <!-- QUICK LINKS -->
-    <div class="nyra-col">
-      <h3>QUICK LINKS</h3>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="spec.html">Specializations</a>
-      <a href="terms.html">Terms & Conditions</a>
-      <a href="policy.html">Privacy Policy</a>
+    <div class="nyra-bottom">
+      ALL COPYRIGHTS RESERVED © NYRA HOSPITALS @ 2024 | DESIGNED & DEVELOPED BY UNIFIED FILMS
     </div>
 
-    <!-- SPECIALIZATION -->
-    <div class="nyra-col">
-      <h3>OUR SPECIALIZATIONS</h3>
-      <a href="spec.html">Eye</a>
-      <a href="spec.html">Laparoscopy</a>
-      <a href="spec.html">General Surgery</a>
-    </div>
-
-    <!-- MAP -->
-    <div class="nyra-col map">
-      <h3>LOCATION MAP</h3>
-      <iframe src="https://www.google.com/maps?q=Nyra%20Hospital%20Hyderabad&output=embed"></iframe>
-    </div>
+    <a href="https://wa.me/918877755530" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:918877755530" class="call"><i class="fa fa-phone"></i></a>
 
   </div>
-
- 
-
-  <div class="nyra-bottom">
-    ALL COPYRIGHTS RESERVED © NYRA HOSPITALS @ 2024 | DESIGNED & DEVELOPED BY UNIFIED FILMS
-  </div>
-
-  <a href="https://wa.me/918877755530" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="tel:918877755530" class="call"><i class="fa fa-phone"></i></a>
-
 </footer>
